@@ -1,3 +1,4 @@
+//server.ts
 import express from 'express';
 // import path from 'node:path';
 import db from './config/connection.js';
@@ -17,3 +18,5 @@ app.use(routes);
 db.once('open', () => {
   app.listen(PORT, () => console.log(`🌍 Now listening on localhost:${PORT}`));
 });
+
+
